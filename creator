@@ -1,0 +1,145 @@
+import "./LoginPage.css";
+
+export default function LoginPage() {
+  return (
+    <main className="polaris-login">
+      <nav className="login-nav">
+        <div className="brand">Polaris</div>
+
+        <div className="nav-links">
+          <a href="#features">How it works</a>
+          <a href="#creators">Creators</a>
+          <a href="#brands">Brands</a>
+        </div>
+
+        <button className="nav-button">Join waitlist</button>
+      </nav>
+
+      <section className="login-layout">
+        <div className="hero-panel">
+          <p className="eyebrow">Creator campaign OS</p>
+
+          <h1>
+            Welcome back to <br />
+            <span>Polaris.</span>
+          </h1>
+
+          <p className="hero-copy">
+            Launch campaigns, track creator progress, and manage deals from one
+            beautiful workspace.
+          </p>
+
+          <div className="hero-actions">
+            <button className="primary-pill">Start faster</button>
+            <button className="secondary-pill">View demo</button>
+          </div>
+
+          <div className="campaign-preview">
+            <div className="preview-header">
+              <span>Campaigns</span>
+              <strong>Roster ready</strong>
+            </div>
+
+            <div className="metric-row">
+              <div>
+                <strong>2.4M</strong>
+                <span>Reach</span>
+              </div>
+              <div>
+                <strong>$12K</strong>
+                <span>Budget</span>
+              </div>
+              <div>
+                <strong>8</strong>
+                <span>Creators</span>
+              </div>
+            </div>
+
+            <div className="creator-list">
+              <div className="creator-item active">
+                <span className="avatar" />
+                <div>
+                  <strong>Alex Morgan</strong>
+                  <p>Short-form creator</p>
+                </div>
+                <em>Live</em>
+              </div>
+
+              <div className="creator-item">
+                <span className="avatar" />
+                <div>
+                  <strong>Mina Park</strong>
+                  <p>Beauty creator</p>
+                </div>
+                <em>Ready</em>
+              </div>
+
+              <div className="creator-item">
+                <span className="avatar" />
+                <div>
+                  <strong>Chris Lee</strong>
+                  <p>Lifestyle creator</p>
+                </div>
+                <em>Review</em>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside className="auth-card">
+          <div className="auth-card-header">
+            <p className="eyebrow purple">Log in</p>
+            <h2>Run your next campaign 10× faster.</h2>
+            <p>
+              Enter your details below to continue to your Polaris dashboard.
+            </p>
+          </div>
+
+          <form className="login-form">
+            <label>
+              Email
+              <input type="email" placeholder="you@brand.com" />
+            </label>
+
+            <label>
+              Password
+              <input type="password" placeholder="••••••••" />
+            </label>
+
+            <div className="form-options">
+              <label className="remember">
+                <input type="checkbox" />
+                Remember me
+              </label>
+
+              <a href="#forgot">Forgot password?</a>
+            </div>
+
+            <button type="submit" className="submit-button">
+              Log in
+            </button>
+          </form>
+
+          <div className="divider">
+            <span />
+            <p>or</p>
+            <span />
+          </div>
+
+          <button className="google-button">
+            Continue with Google
+          </button>
+
+          <p className="signup-copy">
+            New to Polaris? <a href="#signup">Request access</a>
+          </p>
+        </aside>
+      </section>
+
+      <div className="star star-one" />
+      <div className="star star-two" />
+      <div className="blur blur-one" />
+      <div className="blur blur-two" />
+    </main>
+  );
+}
